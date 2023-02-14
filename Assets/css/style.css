@@ -117,10 +117,14 @@ color: azure;
 }
 
 #skills-section .card:hover{
-background-image: url(./Assets/Images/back/web-design-concept-with-drawings.jpg);
+background-image: url(../Images/back/web-design-concept-with-drawings.jpg);
 color: black;
 
 }
+
+/* #overlay_card:hover{
+  background-image: url(../Images/Programming-amico.svg);
+} */
 
 .progress-bar{
 
