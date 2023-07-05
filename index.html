@@ -433,32 +433,36 @@
                     </ul>
                 </div>
             </div>
-            <div class=" col-12 col-sm-12 col-md-12 col-lg-6  ">
+            <div class=" col-12 col-sm-12 col-md-12 col-lg-6 mb-4 ">
 
                 <form action="" class="" name="submit-to-google-sheet">
 
                     <div class="mt-5">
                         <h1 class="" data-aos="zoom-in-up" data-aos-duration="1000">FILL YOUR DETAILS</h1>
                         <div class="mt-4">
-                            <input type="text" class="form-control "  name="Name" placeholder="Name" required>
+                            <input type="text" class="form-control "  name="Name" placeholder="Name" id="name" required>
                         </div>
 
                         <div class="mt-4">
-                            <input type="email" class="form-control" name="Email" placeholder="Email" required>
+                            <input type="email" class="form-control" name="Email" placeholder="Email" id="email" required>
                         </div>
 
                         <div class="mt-4">
-                            <input type="number" class="form-control" name="Contact" placeholder="Phone" required>
+                            <input type="number" class="form-control" name="Contact" placeholder="Phone" id="tel" required>
                         </div>
 
                         <div class="mt-4">
-                            <textarea class="form-control" rows="5" name="Message" placeholder="Message" required></textarea>
+                            <textarea class="form-control" rows="5" name="Message" placeholder="Message" id="mess" required></textarea>
                         </div>
 
                         <div class="mt-4 text-center ">
-                            <button class="btn btn-outline-warning btn-lg w-50  mb-4" data-aos="fade-up"
-                                data-aos-duration="1000" type="submit"> <i class="bi bi-send-check m-2 "> </i>Send
+                            <button class="btn btn-outline-warning btn-lg w-50" data-aos="fade-up"
+                                data-aos-duration="1000" type="" id="send" onclick="message()"> <i class="bi bi-send-check m-2 "> </i>Send
                                 Message</button>
+                        </div>
+                        <div class="message mt-4 mb-5 text-center ">
+                            <div class="success" id="success">Your Message Successfully Sent!</div>
+                            <div class="danger" id="danger">Feilds Can't be Empty!</div>
                         </div>
                     </div>
                 </form>
